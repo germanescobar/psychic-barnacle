@@ -1,0 +1,72 @@
+$icon-font-path: "fonts/bootstrap/";
+
+$brand-primary: #E91E63;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$list-group-hover-bg: #E91E63;
+$list-group-link-color: #E91E63;
+$list-group-link-hover-color: #fff;
+
+@import 'bootstrap';
+
+h1 {
+  color: #303030;
+  font-size: 28px;
+}
+
+.contacts-page {
+  padding-top: 40px;
+
+  .new-contact-btn {
+    text-align: right;
+    margin-top: 27px;
+    margin-bottom: 40px;
+  }
+
+  a.list-group-item {
+    font-size: 18px;
+
+    .details {
+      display: block;
+      color: #999;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    &:hover {
+      .details { color: #FCE4EC; }
+    }
+  }
+}
+
+.contact-form-page {
+  padding-top: 40px;
+
+  h1 { margin-bottom: 20px;}
+}
+
+.contact-page {
+  padding-top: 40px;
+
+  h1 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid $brand-primary;
+    padding-bottom: 15px;
+  }
+
+  .notes {
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    .title {
+      color: #333;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 7px;
+    } 
+  }
+
+  .detail {
+    color: #666;
+  }
+}

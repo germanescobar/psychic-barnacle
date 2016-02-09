@@ -1,0 +1,23 @@
+<div class="container contacts-page">
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-3">
+      <h1>Contacts List</h<1>
+    </div>
+    <div class="col-sm-3 new-contact-btn">
+      <a href="#/new-contact"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="list-group">
+        <a ng-href="#/contacts/{{ contact.$id }}" class="list-group-item" ng-repeat="contact in contacts">
+          {{ contact.name }}
+          <span class="details">
+            <span class="glyphicon glyphicon-envelope"></span> {{ contact.email }}&nbsp;&nbsp;&nbsp;
+            <span class="glyphicon glyphicon-phone"></span> {{ contact.phone }} 
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
